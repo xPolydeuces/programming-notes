@@ -24,3 +24,14 @@
 | get_long | long input |
 | get_string | string input |
 
+## Arithmetic operations
+
+| operator | operation |
+|----------|-----------|
+| + | add |
+| - | substract |
+| * | multiply |
+| / | divide |
+| % | modulo |
+| x = x * 5 | x *= 5 |
+| x = x + 1 | x++ |
