@@ -117,3 +117,32 @@ is the same as
 ```C
 int x = (condition) ? 5 : 6;
 ```
+
+# Loops
+```while``` loop executes only if condition is true
+```C
+while (condition)
+{
+  ... // repeats until condition is false
+}
+```
+```do-while``` loop executes is the same as ```while``` loop, but exectues at least once before checking the condition
+```C
+do
+{
+  ... // executes once, then repeats until condition is false
+}
+```
+```for``` loop executes a set amount of times
+```C
+for (int i = 0; i < 10; i++)
+{
+  ... // loop executes 10 times
+}
+```
+```C
+for (start; condition; increment)
+{
+  ... // loop until condition false
+}
+```
