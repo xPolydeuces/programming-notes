@@ -35,3 +35,17 @@
 | % | modulo |
 | x = x * 5 | x *= 5 |
 | x = x + 1 | x++ |
+
+## Boolean expressions
+
+| expression | result |
+|------------|--------|
+| AND (&&) | x and y true |
+| OR (\|\|) | x or y or both true |
+| NOT (!) | x = true !x = false; |
+| less than | x < y |
+| less than or equal | x <= y |
+| greater than | x > y |
+| greater than or equal | x >= y |
+| equality | x == y |
+| inequality | x != y |
