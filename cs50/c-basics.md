@@ -195,3 +195,10 @@ truthtable[2] = true;
 ```c
 bool battleship[10][10];
 ```
+
+## Command line arguments
+
+```int main(int argc, string argv[])```
+
+- argc (argument count) - it stores number of command line arguments.
+- argv (argument vector) - this array stores user input at the program execution.
