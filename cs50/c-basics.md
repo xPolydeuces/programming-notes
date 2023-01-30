@@ -159,3 +159,16 @@ for (start; condition; increment)
 | cp -r | xcopy /E | create duplicate of the entire directory |
 | rm -rf | rd /s /q | remove directory with everything |
 | mv | move | move and rename file from src to dir |
+
+# Function declaration
+
+```return-type name (argument-list)```
+eg. ```int sum(int a, int b)```
+
+```C
+int sum(int a, int b)
+{
+  int result = a + b;
+  return result;
+}
+```
