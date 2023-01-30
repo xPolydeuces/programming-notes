@@ -118,7 +118,7 @@ is the same as
 int x = (condition) ? 5 : 6;
 ```
 
-# Loops
+## Loops
 ```while``` loop executes only if condition is true
 ```C
 while (condition)
@@ -147,7 +147,7 @@ for (start; condition; increment)
 }
 ```
 
-# Command line
+## Command line
 
 | unix | windows | purpose |
 |------|---------|---------|
@@ -160,7 +160,7 @@ for (start; condition; increment)
 | rm -rf | rd /s /q | remove directory with everything |
 | mv | move | move and rename file from src to dir |
 
-# Function declaration
+## Function declaration
 
 ```return-type name (argument-list)```
 eg. ```int sum(int a, int b)```
@@ -173,7 +173,7 @@ int sum(int a, int b)
 }
 ```
 
-# Arrays
+## Arrays
 
 Declaration: ```type name[size];```
 eg. ```int student_grades[40];```
