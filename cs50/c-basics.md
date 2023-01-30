@@ -146,3 +146,16 @@ for (start; condition; increment)
   ... // loop until condition false
 }
 ```
+
+# Command line
+
+| unix | windows | purpose |
+|------|---------|---------|
+| ls | dir | show all files in the directory |
+| cd | cd | change directory |
+| pwd | echo %cd% | write full path name |
+| mkdir | mkdir / md | create directory |
+| cp | copy | create duplicate of the file |
+| cp -r | xcopy /E | create duplicate of the entire directory |
+| rm -rf | rd /s /q | remove directory with everything |
+| mv | move | move and rename file from src to dir |
