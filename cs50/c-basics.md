@@ -5,7 +5,7 @@
 | Data Type | Range |
 |-----------|-------|
 | int | -2^31 - 2^31 -1 |
-| unsigned int | 0 - 2^32^ -1 |
+| unsigned int | 0 - 2^32 -1 |
 | char | -128 - 127 |
 | float | eg. 3.14 |
 | double | like float, can store bigger nums |
@@ -171,4 +171,27 @@ int sum(int a, int b)
   int result = a + b;
   return result;
 }
+```
+
+# Arrays
+
+Declaration: ```type name[size];```
+eg. ```int student_grades[40];```
+
+### Instantiation syntax
+```c
+bool truthtable[3] = {false, true, true}
+```
+
+### Individual element syntax
+```c
+bool truthtable[3];
+truthtable[0] = false;
+truthtable[1] = true;
+truthtable[2] = true;
+```
+
+### Two-dimensional array
+```c
+bool battleship[10][10];
 ```
