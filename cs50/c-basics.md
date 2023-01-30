@@ -11,3 +11,16 @@
 | double | like float, can store bigger nums |
 | void | type =/= data type |
 
+## CS50 library
+
+| function | return |
+|-----------|-------|
+| bool | true/false |
+| string (char*) | eg. "hello" |
+| get_char | char input |
+| get_double | double input |
+| get_int | int input |
+| get_float | float input |
+| get_long | long input |
+| get_string | string input |
+
