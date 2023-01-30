@@ -4,7 +4,7 @@
 
 | Data Type | Range |
 |-----------|-------|
-| int | -2^31^ - 2^31^ -1 |
+| int | -2^31 - 2^31 -1 |
 | unsigned int | 0 - 2^32^ -1 |
 | char | -128 - 127 |
 | float | eg. 3.14 |
@@ -49,3 +49,71 @@
 | greater than or equal | x >= y |
 | equality | x == y |
 | inequality | x != y |
+
+## Conditionals
+```if construct```
+```C
+if (condition)
+{
+  ...
+}
+```
+```if-else construct```
+```C
+if (condition)
+{
+  ...
+}
+else
+{
+
+}
+```
+```if-elseif-else construct```
+```C
+if (condition)
+{
+  ...
+}
+else if (diffect condition)
+{
+
+}
+else
+{
+
+}
+```
+```switch construct```
+```C
+switch (variable)
+{
+  case 1:
+    ...;
+    break;
+  case 2:
+    ...;
+    break;
+  case 3:
+    ...;
+    break;
+  default:
+    ...;
+}
+```
+```ternary operator```
+```C
+int x;
+if (condition)
+{
+  x = 5;
+}
+else
+{
+  x = 6;
+}
+```
+is the same as
+```C
+int x = (condition) ? 5 : 6;
+```
