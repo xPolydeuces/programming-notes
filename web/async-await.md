@@ -28,3 +28,5 @@ const main = async () => {
 
 main()
 ```
+
+As we can see, it makes the code much cleaner and easier to read.
