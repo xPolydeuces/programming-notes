@@ -27,7 +27,7 @@ You can add text to your page using the following elements:
 * `<p>`: Defines a paragraph of text
 * `<h1>` to `<h6>`: Defines headings of different levels
 * `<strong>`: Defines text of strong importance. Browsers usually display it in bold font. If we wanted to create bold text without greater importance, we can use `<b>` instead.
-* `<em>`: Defines emphasized text. Browser usually display it in italic font. If we wanted to create bold text without greater emphasis, we can use `<i>` instead.
+* `<em>`: Defines emphasized text. Browsers usually display it in italic font. If we wanted to create bold text without greater emphasis, we can use `<i>` instead.
 * `<br>`: Inserts a line break
 
 For example:
@@ -36,3 +36,11 @@ For example:
 <p>This is a <strong>simple</strong> example of a paragraph of text.</p>
 <p>This is a <em>second</em> paragraph of text.</p>
 ```
+
+## Links
+
+You can create links to other pages using the `<a>` element:
+```html
+<a href="https://www.example.com">Visit Example.com</a>
+```
+The `href` attribute specifies the URL of the page you want to link to.
