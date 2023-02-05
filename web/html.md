@@ -53,3 +53,23 @@ You can add images to your page using the `<img>` element:
 ```
 
 The `src` attribute specifies the URL of the image file, and the `alt` attribute provides a description of the image for accessibility purposes.
+
+## Lists
+
+You can create lists of items using the `<ul>` (unordered) and `<ol>` (ordered) elements, along with the `<li>` element:
+
+```html
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+
+<ol>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ol>
+```
+
+The `<ul>` element creates a bullet-point list, while the `<ol>` element creates a numbered list.
