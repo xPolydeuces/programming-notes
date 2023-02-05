@@ -73,3 +73,28 @@ You can create lists of items using the `<ul>` (unordered) and `<ol>` (ordered) 
 ```
 
 The `<ul>` element creates a bullet-point list, while the `<ol>` element creates a numbered list.
+
+## Tables
+
+You can create tables to display data using the `<table>`, `<thead>`, `<tbody>`, `<tr>`, `<th>` and `<td>` elements:
+```html
+<table>
+  <thead>
+    <tr>
+      <th>Header 1</th>
+      <th>Header 2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Row 1, Column 1</td>
+      <td>Row 1, Column 2</td>
+    </tr>
+    <tr>
+      <td>Row 2, Column 1</td>
+      <td>Row 2, Column 2</td>
+    </tr>
+  </tbody>
+</table>
+```
+The `<thead>` element defines the header section of the table, while the `<tbody>` element defines the body of the table. The `<tr>` element defines a row and the `<th>` and `<td>` elements define header and data cells, respectively.
