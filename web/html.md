@@ -44,3 +44,12 @@ You can create links to other pages using the `<a>` element:
 <a href="https://www.example.com">Visit Example.com</a>
 ```
 The `href` attribute specifies the URL of the page you want to link to.
+
+## Images
+
+You can add images to your page using the `<img>` element:
+```html
+<img src="image.jpg" alt="A description of the image">
+```
+
+The `src` attribute specifies the URL of the image file, and the `alt` attribute provides a description of the image for accessibility purposes.
