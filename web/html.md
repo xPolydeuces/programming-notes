@@ -98,3 +98,28 @@ We can create tables to display data using the `<table>`, `<thead>`, `<tbody>`, 
 </table>
 ```
 The `<thead>` element defines the header section of the table, while the `<tbody>` element defines the body of the table. The `<tr>` element defines a row and the `<th>` and `<td>` elements define header and data cells, respectively.
+
+## Forms
+
+We can create forms to collect data from users using the `<form>`, `<input>`, `<select>`, `<textarea>` and `<button>` elements:
+```html
+<form>
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name">
+
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email">
+
+  <label for="message">Message:</label>
+  <textarea id="message" name="message"></textarea>
+
+  <button type="submit">Submit</button>
+</form>
+```
+* `<form>`: defines a form,
+* `<input>`: create input fields, such as text, email, password, radio buttons, checkboxes and more,
+* `<select>`: create a dropdown list,
+* `<textarea>`: create a multi-line input field,
+* `<button>`: used to submit the form,
+* `<label>`: can be used to associate a text description with form control.
+
