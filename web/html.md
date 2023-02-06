@@ -123,3 +123,16 @@ We can create forms to collect data from users using the `<form>`, `<input>`, `<
 * `<button>`: used to submit the form,
 * `<label>`: can be used to associate a text description with form control.
 
+# HTML5 specific features
+
+## Semantic Elements
+
+HTML5 provides new semantic elements that provide a meaningful description of the structure and content of a web page. These elements include: 
+
+* `<header>`: Represents the header of a document or section
+* `<nav>`: Represents a section of a page that contains navigation links
+* `<article>`: Represents a self-contained composition in a document
+* `<section>`: Represents a standalone section of a document
+* `<aside>`: Represents a section of a page that contains content aside from the main content
+* `<footer>`: Represents the footer of a document or section
+
