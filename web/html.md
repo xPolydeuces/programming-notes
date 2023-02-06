@@ -23,7 +23,7 @@ The `<head>` element contains metadata about the document, such as the title of 
 
 ## Text Content
 
-You can add text to your page using the following elements:
+There are several ways to format text in HTMl. Here are the most commonly used elements:
 * `<p>`: Defines a paragraph of text
 * `<h1>` to `<h6>`: Defines headings of different levels
 * `<strong>`: Defines text of strong importance. Browsers usually display it in bold font. If we wanted to create bold text without greater importance, we can use `<b>` instead.
@@ -39,24 +39,24 @@ For example:
 
 ## Links
 
-You can create links to other pages using the `<a>` element:
+We can create links to other pages using the `<a>` element:
 ```html
 <a href="https://www.example.com">Visit Example.com</a>
 ```
-The `href` attribute specifies the URL of the page you want to link to.
+The `href` attribute specifies the URL of the page we want to link to.
 
 ## Images
 
-You can add images to your page using the `<img>` element:
+We can add images to the page using the `<img>` element:
 ```html
 <img src="image.jpg" alt="A description of the image">
 ```
 
-The `src` attribute specifies the URL of the image file, and the `alt` attribute provides a description of the image for accessibility purposes.
+The `src` attribute specifies the URL of the image file and the `alt` attribute provides a description of the image for accessibility purposes.
 
 ## Lists
 
-You can create lists of items using the `<ul>` (unordered) and `<ol>` (ordered) elements, along with the `<li>` element:
+We can create lists of items using the `<ul>` (unordered) and `<ol>` (ordered) elements, along with the `<li>` element:
 
 ```html
 <ul>
@@ -76,7 +76,7 @@ The `<ul>` element creates a bullet-point list, while the `<ol>` element creates
 
 ## Tables
 
-You can create tables to display data using the `<table>`, `<thead>`, `<tbody>`, `<tr>`, `<th>` and `<td>` elements:
+We can create tables to display data using the `<table>`, `<thead>`, `<tbody>`, `<tr>`, `<th>` and `<td>` elements:
 ```html
 <table>
   <thead>
