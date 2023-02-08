@@ -154,3 +154,7 @@ HTML5 introduces several new form-related features, including:
 * New form input types with built-in validation
 * New attributes for form elements that provide additional validation and user-friendly features
 * A new form attribute, `autocomplete`, for specifying whether the browser should automatically fill in form values
+
+## Local Storage
+
+HTML5 provides a new way to store data on the client-side, called local storage. This allows for faster loading times and offline access to the data.
