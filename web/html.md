@@ -142,3 +142,8 @@ HTML5 includes new elements for embedding multimedia content directly into web p
 
 * `<audio>`: Embeds audio content in your web page
 * `<video>`: Embeds video content in your web page
+
+## Canvas
+
+The `<canvas>` element provides a way to draw graphics, animations, and other visual content using JavaScript.
+
