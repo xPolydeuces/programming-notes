@@ -158,3 +158,7 @@ HTML5 introduces several new form-related features, including:
 ## Local Storage
 
 HTML5 provides a new way to store data on the client-side, called local storage. This allows for faster loading times and offline access to the data.
+
+## Web Workers
+
+Web Workers is a new feature in HTML5 that allows developers to run scripts in the background, separate from the main page, for faster processing and improved performance.
