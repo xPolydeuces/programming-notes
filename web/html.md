@@ -147,3 +147,10 @@ HTML5 includes new elements for embedding multimedia content directly into web p
 
 The `<canvas>` element provides a way to draw graphics, animations, and other visual content using JavaScript.
 
+## Forms
+
+HTML5 introduces several new form-related features, including:
+
+* New form input types with built-in validation
+* New attributes for form elements that provide additional validation and user-friendly features
+* A new form attribute, `autocomplete`, for specifying whether the browser should automatically fill in form values
