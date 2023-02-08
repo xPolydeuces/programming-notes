@@ -136,3 +136,9 @@ HTML5 provides new semantic elements that provide a meaningful description of th
 * `<aside>`: Represents a section of a page that contains content aside from the main content
 * `<footer>`: Represents the footer of a document or section
 
+## Multimedia elements
+
+HTML5 includes new elements for embedding multimedia content directly into web pages:
+
+* `<audio>`: Embeds audio content in your web page
+* `<video>`: Embeds video content in your web page
