@@ -161,4 +161,29 @@ HTML5 provides a new way to store data on the client-side, called local storage.
 
 ## Web Workers
 
-Web Workers is a new feature in HTML5 that allows developers to run scripts in the background, separate from the main page, for faster processing and improved performance.
+HTML5 Web Workers are a way to run scripts in the background, separate from the main JavaScript execution thread. This allows you to perform long-running or intensive operations without freezing the user interface, making your web pages more responsive and improving overall performance.
+
+A Web Worker is a separate JavaScript file that runs in its own thread, with its own global scope and context. You can start a worker by creating a new instance of the `Worker` object, passing it the URL of the worker script:
+
+```js
+var worker = new Worker("worker.js");
+```
+
+You can communicate with the worker using messages. You can send data to the worker using the `postMessage` method, and the worker can send data back to the main thread using the `postMessage` method as well:
+
+```js
+worker.postMessage("Hello Worker");
+
+worker.onmessage = function(event) {
+  console.log("Worker says: " + event.data);
+};
+```
+Web Workers have several limitations compared to the main JavaScript thread:
+
+* They don't have access to the DOM
+* They don't have access to certain browser APIs, such as `window`, `document`, and `location`
+* They can't modify the page's URL
+
+However, they can use a subset of JavaScript and several APIs, such as `XMLHttpRequest`, `IndexedDB`, and `WebSockets`, to perform their tasks.
+
+In summary, HTML5 Web Workers provide a way to run JavaScript in the background, separate from the main execution thread, improving the responsiveness of your web pages and enabling you to perform long-running or intensive operations without affecting the user experience.
