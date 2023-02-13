@@ -3,8 +3,9 @@
 
 ## Important HTTP Request Methods
 
-* GET - requests a representation of the specified resource. Requests using `GET` should only be used to request data (they shouldn't include data);
-* 
+* GET - requests a representation of the specified resource. Requests using `GET` should only be used to request data (they shouldn't include data),
+* PUT - creates a new resource or replaces a representation of the target resource with the request payload,
+* POST - sends data to the server. The type of the body of the request is indicated by the `Content-Type` header;
 
 ## Important headers
 
