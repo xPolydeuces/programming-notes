@@ -15,3 +15,6 @@ Always keep the Developer Console open on your web browser.
 ### Important headers
 
 * Content-Type: provides us with the actual content type of the returned content.
+
+## DOM
+*Document Object Model (DOM)* is an *Application Programming Interface (API)* that enables programmatic modificiation of the element trees corresponding to web pages.
