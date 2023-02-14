@@ -42,3 +42,6 @@ DOM hierarchy example:
   </body>
 </html>
 ```
+
+## CSS
+*Cascading Style Sheets (CSS)* is a style sheet language used to determine the appearance of web pages. More about it in another [note(WIP)](/web/css.md)
