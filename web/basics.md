@@ -16,6 +16,9 @@ Always keep the Developer Console open on your web browser.
 
 * Content-Type: provides us with the actual content type of the returned content.
 
+## HTML
+*HTML* stands for *HyperText Markup Language* and is used to create the structure and content of web pages. More about it in another [note](/web/html.md)
+
 ## DOM
 *Document Object Model (DOM)* is an *Application Programming Interface (API)* that enables programmatic modificiation of the element trees corresponding to web pages.
 
