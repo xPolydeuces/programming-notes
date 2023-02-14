@@ -18,3 +18,24 @@ Always keep the Developer Console open on your web browser.
 
 ## DOM
 *Document Object Model (DOM)* is an *Application Programming Interface (API)* that enables programmatic modificiation of the element trees corresponding to web pages.
+
+DOM hierarchy example:
+```html
+<!doctype html>
+<html>
+  <head></head>
+  <body>
+    <div class="container">
+      <h1>Notes</h1>
+      <div id="notes">
+        <ul class="notes">
+          <li>HTML is easy</li>
+          <li>Browser can execute only Javascript</li>
+          <li>Most important methods of HTTP-protocal are GET and POST</li>
+        </ul>
+      </div>
+      <form action="/new_note" method="POST">...</form>
+    </div>
+  </body>
+</html>
+```
