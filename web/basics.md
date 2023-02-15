@@ -45,3 +45,6 @@ DOM hierarchy example:
 
 ## CSS
 *Cascading Style Sheets (CSS)* is a style sheet language used to determine the appearance of web pages. More about it in another [note(WIP)](/web/css.md)
+
+## Single Page App
+*Single Page App (SPA)* is a web application or website that interacts with the user by dinamically rewriting the current web page with new data from the web server, instead of the more "traditional" approach of a web browser loading entire new pages. Page never refreshes while implementing *SPA* - all necessary HTML, CSS and JavaScript code are either retrieved by the browser with a single page load, or the appropriate resources are dynamically loaded and added to the page as necessary.
