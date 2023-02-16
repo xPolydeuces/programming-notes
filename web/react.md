@@ -15,7 +15,11 @@ It should open the freshly created React app in your default browser on `http://
 
 ## Component
 
-One of the main things in React are *Components*. The default component, created when using `create-react-app` is called `App` and looks something like this:
+One of the main things in React are *Components*. React official site describes them as 
+> Components let you split the UI into independent, reusable pieces, and think about each piece in isolation. This page provides an introduction to the idea of components. You can find a detailed component API reference here.
+
+> Conceptually, components are like JavaScript functions. They accept arbitrary inputs (called “props”) and return React elements describing what should appear on the screen.
+The default component, created when using `create-react-app` is called `App` and looks something like this:
 
 ```js
 const App = () => (
@@ -33,3 +37,7 @@ ReactDOM.createRoot(document.getElementbyId('root')).render(<App />)
 ```
 
 The app will render *div*-tag, which wraps a *p*-tag containing the text *Hello world*.
+
+## JSX
+
+The syntax used inside the React `App` is not HTML, despite looking like it. It actually is *JSX*, a syntax extension to JavaScript, used for describing what UI should look like.
