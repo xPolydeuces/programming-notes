@@ -29,3 +29,50 @@ In *JavaScript* variable's data can be changed during execution. Previously, the
 * `let` - creates a variable that can be changed, it has local scope.
 * `const` - creates a constant that cannot be changed, it has local scope.
 * `var` - creates a variable that can be changed, it has global scope. **Obsolete, not recommended to use.**
+
+## Arrays
+
+An array and a couple of examples of its use:
+
+```js
+const t = [1, -1, 3] // array declaration
+
+t.push(5)
+
+console.log(t.length) // 4 is printed
+console.log(t[1])     // -1 is printed
+
+t.forEach(value => {
+  console.log(value)  // numbers 1, -1, 3, 5 are printed, each to own line
+})
+```
+
+Despite being a const, we can see that the array can actually be changed. It's because the array is an object and the variable always points to the same object. The content of the array can change however.
+
+### Useful methods
+
+* `concat` - creates new array with the added item, example: 
+```js
+const t = [1, -1, 3]
+
+const t2 = t.concat(5)  // creates new array
+
+console.log(t)  // [1, -1, 3] is printed
+console.log(t2) // [1, -1, 3, 5] is printed
+```
+* `map` - creates new array, for which the function given as a parameter is used to create the items, example:
+```js
+const t = [1, 2, 3]
+
+const m1 = t.map(value => value * 2)
+console.log(m1)   // [2, 4, 6] is printed
+```
+* destructuring statement - helpful way to assign items of the array to new variables, example:
+```js
+const t = [1, 2, 3, 4, 5]
+
+const [first, second, ...rest] = t
+
+console.log(first, second)  // 1, 2 is printed
+console.log(rest)          // [3, 4, 5] is printed
+```
