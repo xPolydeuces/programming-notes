@@ -76,3 +76,39 @@ const [first, second, ...rest] = t
 console.log(first, second)  // 1, 2 is printed
 console.log(rest)          // [3, 4, 5] is printed
 ```
+
+## Objects
+Objects are declared in JavaScript with `{}`, one of the ways to declare them is using *object literals*, as such:
+```js
+const object1 = {
+  name: 'Arto Hellas',
+  age: 35,
+  education: 'PhD',
+}
+
+const object2 = {
+  name: 'Full Stack web application development',
+  level: 'intermediate studies',
+  size: 5,
+}
+
+const object3 = {
+  name: {
+    first: 'Dan',
+    last: 'Abramov',
+  },
+  grades: [2, 3, 5, 3],
+  department: 'Stanford University',
+}
+```
+The values of the properties can be of any type, like integers, strings, arrays, objects etc. The properties of an object are referenced by using the "dot" notation or by using brackets:
+```js
+console.log(object1.name)         // Arto Hellas is printed
+const fieldName = 'age' 
+console.log(object1[fieldName])    // 35 is printed
+```
+It's also possible to add properties after object is created, like so:
+```js
+object1.address = 'Helsinki'
+object1['secret number'] = 12341
+```
