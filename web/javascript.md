@@ -78,40 +78,65 @@ console.log(rest)          // [3, 4, 5] is printed
 ```
 
 ## Objects
-Objects are declared in JavaScript with `{}`, one of the ways to declare them is using *object literals*, as such:
+In modern JavaScript, objects are a fundamental data type used to store and organize data. Objects are collections of key-value pairs, where each key represents a property name and each value represents the value of that property.
+
+Here are some key features of objects in modern JavaScript:
+
+* Object literals: Objects can be created using object literals, which are enclosed in curly braces {} and contain a list of property-value pairs separated by commas. For example:
 ```js
-const object1 = {
-  name: 'Arto Hellas',
-  age: 35,
-  education: 'PhD',
-}
+const person = {
+  name: 'John',
+  age: 30,
+  isStudent: true
+};
+```
+* Accessing properties: Object properties can be accessed using dot notation (objectName.propertyName) or bracket notation (objectName['propertyName']). For example:
+```js
+console.log(person.name); // 'John'
+console.log(person['age']); // 30
+```
+* Adding and updating properties: Object properties can be added or updated by assigning a value to a new or existing property. For example:
+```js
+person.city = 'New York';
+person.age = 31;
+```
+* Object methods: Objects can also contain methods, which are functions that are properties of an object. For example:
+```js
+const person = {
+  name: 'John',
+  age: 30,
+  isStudent: true,
+  greet() {
+    console.log(`Hello, my name is ${this.name}!`);
+  }
+};
 
-const object2 = {
-  name: 'Full Stack web application development',
-  level: 'intermediate studies',
-  size: 5,
-}
-
-const object3 = {
-  name: {
-    first: 'Dan',
-    last: 'Abramov',
+person.greet(); // 'Hello, my name is John!'
+```
+* Object destructuring: Object destructuring is a syntax for extracting properties from an object and assigning them to variables. For example:
+```js
+const { name, age } = person;
+console.log(name); // 'John'
+console.log(age); // 30
+```
+* Object methods and "this": When an object method is called, the this keyword refers to the object itself. This allows methods to access and manipulate the object's properties. For example:
+```js
+const person = {
+  name: 'John',
+  age: 30,
+  isStudent: true,
+  greet() {
+    console.log(`Hello, my name is ${this.name}!`);
   },
-  grades: [2, 3, 5, 3],
-  department: 'Stanford University',
-}
+  celebrateBirthday() {
+    this.age++;
+  }
+};
+
+person.celebrateBirthday();
+console.log(person.age); // 31
 ```
-The values of the properties can be of any type, like integers, strings, arrays, objects etc. The properties of an object are referenced by using the "dot" notation or by using brackets:
-```js
-console.log(object1.name)         // Arto Hellas is printed
-const fieldName = 'age' 
-console.log(object1[fieldName])    // 35 is printed
-```
-It's also possible to add properties after object is created, like so:
-```js
-object1.address = 'Helsinki'
-object1['secret number'] = 12341
-```
+Objects are a powerful and versatile data type in modern JavaScript, and they are used extensively in web development to represent and manipulate data. Understanding how to work with objects is essential for building complex and dynamic applications.
 
 ## Functions
 In modern JavaScript, functions are an essential part of the language and are used for a wide range of tasks, from simple calculations to complex event handling and application logic.
