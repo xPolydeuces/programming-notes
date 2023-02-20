@@ -112,3 +112,57 @@ It's also possible to add properties after object is created, like so:
 object1.address = 'Helsinki'
 object1['secret number'] = 12341
 ```
+
+## Functions
+In modern JavaScript, functions are an essential part of the language and are used for a wide range of tasks, from simple calculations to complex event handling and application logic.
+
+Here are some key features of functions in modern JavaScript:
+
+* Function declaration: Functions can be declared using the function keyword followed by the function name and a set of parentheses that may contain parameters, and then a set of curly braces that contain the function body. For example:
+```js
+function addNumbers(a, b) {
+  return a + b;
+}
+```
+* Arrow functions: Arrow functions are a shorthand syntax for declaring functions that was introduced in ES6. They use a => syntax and can omit the function keyword, return keyword (if the function body is a single expression), and even the parentheses for a single parameter. For example:
+```js
+const addNumbers = (a, b) => a + b;
+```
+* Function parameters: Functions can accept zero or more parameters, which are declared within the parentheses after the function name. Parameters are separated by commas and can have default values. For example:
+```js
+function greet(name = 'World') {
+  console.log(`Hello, ${name}!`);
+}
+
+greet(); // Hello, World!
+greet('John'); // Hello, John!
+```
+* Function return values: Functions can return a value using the return keyword. If a function does not explicitly return a value, it will return undefined. For example:
+```js
+function addNumbers(a, b) {
+  return a + b;
+}
+
+const sum = addNumbers(2, 3);
+console.log(sum); // 5
+```
+* Higher-order functions: Functions can be passed as arguments to other functions or returned from functions, allowing for the creation of higher-order functions. These functions can be used to compose more complex behavior out of simpler functions. For example:
+```js
+function multiplyBy(factor) {
+  return function (number) {
+    return number * factor;
+  }
+}
+
+const double = multiplyBy(2);
+console.log(double(3)); // 6
+```
+* Anonymous functions: Functions can be declared anonymously and assigned to a variable or passed as an argument to another function. For example:
+```js
+const sayHello = function () {
+  console.log('Hello!');
+};
+
+sayHello(); // Hello!
+```
+Functions are a crucial part of modern JavaScript, and understanding their features and capabilities is essential for developing effective and efficient code.
