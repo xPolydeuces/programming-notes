@@ -51,23 +51,33 @@ Despite being a const, we can see that the array can actually be changed. It's b
 
 ### Useful methods
 
-* `concat` - creates new array with the added item, example: 
+* `slice()` - returns a shallow copy of a portion of an array into a new array object selected from begin to end (end not included).
 ```js
-const t = [1, -1, 3]
-
-const t2 = t.concat(5)  // creates new array
-
-console.log(t)  // [1, -1, 3] is printed
-console.log(t2) // [1, -1, 3, 5] is printed
+const numbers = [1, 2, 3, 4, 5];
+const subArray = numbers.slice(2, 4);
+console.log(subArray); // [3, 4]
+console.log(numbers); // [1, 2, 3, 4, 5]
 ```
-* `map` - creates new array, for which the function given as a parameter is used to create the items, example:
+* `splice()` - changes the contents of an array by removing or replacing existing elements and/or adding new elements.
 ```js
-const t = [1, 2, 3]
-
-const m1 = t.map(value => value * 2)
-console.log(m1)   // [2, 4, 6] is printed
+const numbers = [1, 2, 3, 4, 5];
+numbers.splice(2, 1, 'a', 'b');
+console.log(numbers); // [1, 2, 'a', 'b', 4, 5]
 ```
-* destructuring statement - helpful way to assign items of the array to new variables, example:
+* `concat()` - returns a new array that is a concatenation of two or more arrays.
+```js
+const numbers1 = [1, 2, 3];
+const numbers2 = [4, 5, 6];
+const allNumbers = numbers1.concat(numbers2);
+console.log(allNumbers); // [1, 2, 3, 4, 5, 6]
+```
+* `map()` - creates a new array with the results of calling a provided function on every element in the calling array.
+```js
+const numbers = [1, 2, 3, 4, 5];
+const squaredNumbers = numbers.map(num => num ** 2);
+console.log(squaredNumbers); // [1, 4, 9, 16, 25]
+```
+* destructuring statement - helpful way to assign items of the array to new variables.
 ```js
 const t = [1, 2, 3, 4, 5]
 
@@ -75,6 +85,18 @@ const [first, second, ...rest] = t
 
 console.log(first, second)  // 1, 2 is printed
 console.log(rest)          // [3, 4, 5] is printed
+```
+* `reduce()` - applies a function to each element of an array to reduce the array to a single value.
+```js
+const numbers = [1, 2, 3, 4, 5];
+const sum = numbers.reduce((accumulator, currentValue) => accumulator + currentValue);
+console.log(sum); // 15
+```
+* `filter()` - creates a new array with all elements that pass the test implemented by the provided function.
+```js
+const numbers = [1, 2, 3, 4, 5];
+const evenNumbers = numbers.filter(num => num % 2 === 0);
+console.log(evenNumbers); // [2, 4]
 ```
 
 ## Objects
