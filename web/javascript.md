@@ -213,3 +213,42 @@ const sayHello = function () {
 sayHello(); // Hello!
 ```
 Functions are a crucial part of modern JavaScript, and understanding their features and capabilities is essential for developing effective and efficient code.
+
+## Object methods and "this"
+
+In JavaScript, objects are a powerful tool for storing and manipulating collections of data. Objects can have properties and methods, and methods are simply functions that are attached to an object. When a method is called on an object, it has access to the object's properties and can modify them if needed. The `this` keyword plays an important role in object methods, as it refers to the object on which the method was called.
+
+Here is an example of an object with a method:
+```js
+const person = {
+  firstName: 'John',
+  lastName: 'Doe',
+  fullName() {
+    return `${this.firstName} ${this.lastName}`;
+  }
+};
+
+console.log(person.fullName()); // "John Doe"
+```
+
+In this example, `person` is an object that has two properties: `firstName` and `lastName`. It also has a method called `fullName` which returns the full name of the person by concatenating the `firstName` and `lastName` properties. Inside the `fullName` method, `this` refers to the `person` object, so we can access the `firstName` and `lastName` properties using `this.firstName` and `this.lastName`.
+
+The `this` keyword can be used in other ways as well. For example, if we want to create a method that modifies an object's properties, we can use `this` to refer to the object itself:
+```js
+const person = {
+  firstName: 'John',
+  lastName: 'Doe',
+  age: 30,
+  celebrateBirthday() {
+    this.age++;
+  }
+};
+
+console.log(person.age); // 30
+person.celebrateBirthday();
+console.log(person.age); // 31
+```
+
+In this example, the `celebrateBirthday` method increments the `age` property of the `person` object by 1. Inside the method, `this` refers to the `person` object, so we can modify the `age` property using `this.age++`.
+
+Using `this` in object methods allows us to write more reusable and dynamic code. Instead of hard-coding property names or values, we can reference them dynamically using `this`. 
