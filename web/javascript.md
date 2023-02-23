@@ -252,3 +252,43 @@ console.log(person.age); // 31
 In this example, the `celebrateBirthday` method increments the `age` property of the `person` object by 1. Inside the method, `this` refers to the `person` object, so we can modify the `age` property using `this.age++`.
 
 Using `this` in object methods allows us to write more reusable and dynamic code. Instead of hard-coding property names or values, we can reference them dynamically using `this`. 
+
+## Classes
+To define a class in JavaScript, we use the `class` keyword followed by the name of the class, like so:
+```js
+class Car {
+  constructor(make, model, year) {
+    this.make = make;
+    this.model = model;
+    this.year = year;
+  }
+
+  get age() {
+    return new Date().getFullYear() - this.year;
+  }
+
+  start() {
+    console.log(`Starting the ${this.make} ${this.model}...`);
+  }
+
+  stop() {
+    console.log(`Stopping the ${this.make} ${this.model}...`);
+  }
+}
+```
+
+In this example, we define a `Car` class that has three properties (`make`, `model`, and `year`) and three methods (`start`, `stop`, and `age`). The `constructor` method is a special method that is called when a new instance of the class is created. In this case, the `constructor` sets the initial values of the `make`, `model`, and `year` properties.
+
+The `get age()` method is a getter that calculates the age of the car based on the current year and the `year` property. Getters are special methods that allow us to access properties in a more dynamic way.
+
+The `start` and `stop` methods are simple methods that log a message to the console when called.
+
+Once we have defined a class, we can create instances of that class using the `new` keyword, like so:
+```js
+const myCar = new Car('Toyota', 'Camry', 2020);
+myCar.start(); // "Starting the Toyota Camry..."
+console.log(myCar.age); // 3
+```
+In this example, we create a new instance of the `Car` class called `myCar`. We pass in the make, model, and year of the car as arguments to the constructor. We then call the `start` method on `myCar`, which logs a message to the console. Finally, we log the age of the car using the `age` getter.
+
+Classes in JavaScript provide a powerful way of organizing code and creating reusable templates for objects. They allow us to define properties and methods that can be shared across instances of the same class, and they help to make our code more modular and maintainable.
