@@ -59,3 +59,5 @@ One important thing is to **always** capitalize Components' names. Otherwise Rea
 ## JSX
 
 The syntax used inside the React `App` is not HTML, despite looking like it. It actually is *JSX*, a syntax extension to JavaScript, used for describing what UI should look like. The important difference while writing it is that the tags have to **always** be closed. While `<br>` would work in HTML, it wouldn't in our React app and we need to change it to `<br />` for it to actually work.
+
+## 
