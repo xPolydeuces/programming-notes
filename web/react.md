@@ -51,7 +51,7 @@ const name = 'Bart'
 const App = () => (
   <div>
     <Hello name='Simon' /> // result: "Hello Simon"
-    <Hello name={name}> // result: "Hello Bart"
+    <Hello name={name} /> // result: "Hello Bart"
 )
 ```
 One important thing is to **always** capitalize Components' names. Otherwise React will recognize them as the built-in HTML elements or throw an error.
