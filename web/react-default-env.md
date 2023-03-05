@@ -28,7 +28,7 @@ You will be asked if you want to install `eslint-plugin-react@latest` plugin, ch
 * ` Which package manager do you want to use?` **>npm**
 
 Update the created file to look like this:
-```
+```js
 module.exports = {
   'env': {
     'browser': true,
