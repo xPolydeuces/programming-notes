@@ -189,3 +189,9 @@ In this example, we define two functional components: `Button` and `Form`. The `
 The `Form` component renders a form with a text input and a submit button. It adds an event handler function called `handleSubmit` to the onSubmit attribute of the form. When the form is submitted, the `handleSubmit` function is called and logs a message to the console. Note that we also call `event.preventDefault()` to prevent the form from being submitted in the traditional way, which would cause the page to refresh.
 
 Event handling in React is similar to event handling in regular JavaScript, but with some additional features and considerations. Overall, event handling is an important part of creating dynamic and interactive user interfaces in React.
+
+## Forms
+
+Forms in modern React are used to collect data from users, such as text input, checkboxes, and radio buttons. React provides several built-in components for working with forms, including `input`, `textarea`, and `select`, as well as the `form` component itself.
+
+To use a form in React, we typically define a component that renders the form and handles form submission, like so:
