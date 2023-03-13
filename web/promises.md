@@ -88,3 +88,45 @@ In this example, the `myAsyncFunction` is marked as `async`, which means it retu
 
 Overall, promises are an important tool for handling asynchronous operations in JavaScript. They allow you to write more efficient and readable code, and simplify complex asynchronous workflows.
 
+## Axios
+
+Axios is a popular JavaScript library that makes it easy to send HTTP requests and handle responses in a browser or Node.js environment. Axios uses promises to handle asynchronous operations, which allows for clean and concise code.
+
+To use Axios, you first need to install it using a package manager like npm:
+```bash
+npm install axios
+```
+Once you have installed Axios, you can import it into your JavaScript file and use it to send HTTP requests. Axios provides methods for sending various types of requests, including GET, POST, PUT, DELETE, and more.
+
+Here is an example of using Axios to send a GET request:
+```js
+const axios = require('axios');
+
+axios.get('https://jsonplaceholder.typicode.com/posts')
+  .then(response => {
+    console.log(response.data);
+  })
+  .catch(error => {
+    console.error(error);
+  });
+```
+In this example, we use the `axios.get` method to send a GET request to the specified URL. We then use the `then` method to handle the successful response, and the `catch` method to handle any errors that may occur.
+
+Axios also supports the `async` and `await` syntax, which makes it even easier to write asynchronous code that looks synchronous. Here is an example of using `async` and `await` with Axios:
+```js
+const axios = require('axios');
+
+async function getData() {
+  try {
+    const response = await axios.get('https://jsonplaceholder.typicode.com/posts');
+    console.log(response.data);
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+getData();
+```
+In this example, we use the `async` keyword to mark the `getData` function as asynchronous. We then use the `await` keyword to wait for the `axios.get` method to complete before logging the response data to the console. If an error occurs, the `catch` block will handle it.
+
+Axios also provides several other features, such as interceptors for handling request and response data, automatic request cancellation, and more. Overall, Axios is a powerful tool for sending HTTP requests and handling responses in JavaScript, and its use of promises makes it easy to write clean and concise asynchronous code.
