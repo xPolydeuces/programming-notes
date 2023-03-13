@@ -49,3 +49,4 @@ myPromise.then((result) => {
   console.error(error);
 });
 ```
+In this example, the first promise resolves to the value `1`. The first `then` method adds `2` to the result and returns a new promise. The second `then` method logs the final result (`3`) to the console. If there was an error in any of the promises, the `catch` method would be called instead.
