@@ -16,3 +16,7 @@ If we don't want to use install it globally, the alternative is to use npx comma
 ```bash
 npx json-server --port 3001 --watch db.json
 ```
+Another one is to simply install it as a development dependency:
+```bash
+npm install json-server --save-dev
+```
