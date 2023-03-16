@@ -1,3 +1,4 @@
+# REST
 REST, or Representational State Transfer, is a popular architectural style for designing web-based systems. It is a set of principles that defines how web services should behave, and how they should interact with each other.
 
 The key idea behind REST is that resources should be identified by unique URIs (Uniform Resource Identifiers), and that these resources can be manipulated using a set of standard operations, such as GET, POST, PUT, DELETE, etc. These operations are often referred to as HTTP methods, since they are based on the HTTP protocol.
