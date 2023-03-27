@@ -2,6 +2,11 @@
 
 Express is a popular web framework for Node.js that makes it easier to build web applications and APIs. Express provides a simple and flexible way to handle requests and responses, middleware for handling common web application tasks, and more.
 
+To install express, use following command:
+```bash
+npm install express
+```
+
 Here's an example of using Express to create a simple web server that responds to HTTP requests:
 ```js
 const express = require('express');
