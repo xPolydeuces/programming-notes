@@ -33,3 +33,34 @@ The *-t* option can be used for running tests with a specific name:
 The following command will run all of the tests that contain *notes* in their name:
 
 ```npm test -- -t 'notes'```
+
+Example test file:
+
+```js
+const request = require('supertest');
+const app = require('./app');
+
+describe('GET /', () => {
+  it('responds with "Hello, world!"', async () => {
+    const response = await request(app).get('/');
+    expect(response.statusCode).toBe(200);
+    expect(response.text).toBe('Hello, world!');
+  });
+});
+```
+
+In this example, we're using the supertest library to make HTTP requests to our application and test the response.
+
+The app we are testing:
+
+```js
+const express = require('express');
+
+const app = express();
+
+app.get('/', (req, res) => {
+  res.send('Hello, world!');
+});
+
+module.exports = app;
+```
